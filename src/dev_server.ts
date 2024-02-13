@@ -149,7 +149,6 @@ export class DevServer {
 
     this.#httpServer.on('message', (message) => {
       if (this.#isAdonisJSReadyMessage(message)) {
-        
         const host = message.host
 
         const displayMessage = ui
