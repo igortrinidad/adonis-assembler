@@ -149,7 +149,7 @@ export class DevServer {
 
     this.#httpServer.on('message', (message) => {
       if (this.#isAdonisJSReadyMessage(message)) {
-        const host = message.host === '0.0.0.0' ? '127.0.0.1' : message.host
+        const host = message.host
 
         const displayMessage = ui
           .sticker()
